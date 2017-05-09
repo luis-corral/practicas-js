@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="store">
+	<head>
+		<title>Book Store</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<div class="container" ng-controller="StoreController as store">
+
+		<ul class="list-group">
+
+		 <li class="list-group-item" ng-repeat="product in store.products">
+		 		
+
+
+			  <br>
+
+<br>
+<br>
+<br>
+
+		 <div class="row">
+			<div class="col-md-2">
+			 	<img ng-src="{{product.images[0].full}}"/>
+			  </div>
+			  <div class="row">
+				<div class="col-md-6">
+			  <h2>
+			 {{product.titulo}}
+			 </h2>
+			 <hr>
+			 <h3>
+ 			{{product.editorial}}
+ 			</h3>
+ 			<p>{{product.description}}</p>
+			 </div>
+			 </div>
+			
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/app3.js"></script>
+	</body>
+</html>
